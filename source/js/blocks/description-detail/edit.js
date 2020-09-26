@@ -10,20 +10,19 @@ const edit = ({
   onReplace,
   onRemove,
 }) => {
+  const { content, placeholder } = attributes;
   return (
     <>
-      {/*<CustomInputControl />*/}
       <RichText
         tag="dd"
         style={{
           padding: "0 0 0 1.6em",
         }}
-        value={attributes.content}
+        value={content}
         onChange={(content) => {
           setAttributes({ content });
         }}
         onSplit={(value) => {
-          console.log(value);
           if (!value) {
             return createBlock(name);
           }
@@ -36,7 +35,7 @@ const edit = ({
         onMerge={mergeBlocks}
         onReplace={onReplace}
         onRemove={onRemove}
-        placeholder={attributes.placeholder || "Write detail..."}
+        placeholder={placeholder || "Write detail..."}
       />
     </>
   );

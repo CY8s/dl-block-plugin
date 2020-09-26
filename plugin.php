@@ -1,8 +1,9 @@
 <?php
 /**
- * Plugin Name: DL WP-Block
- * Version:     0.1a
+ * Plugin Name: &lt;DL&gt; Block
+ * Version:     1.0.0
  * Author:      Casey Yates
+ * Description: Adds block for description list (or definition list) &lt;DL&gt; content
  */
 
 define( 'CYDLWP_DIR' , plugin_dir_path( __FILE__ ) );

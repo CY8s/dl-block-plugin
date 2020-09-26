@@ -14,7 +14,6 @@ const edit = ({
 }) => {
   return (
     <>
-      {/*<CustomInputControl />*/}
       <RichText
         tag="dt"
         value={attributes.content}
@@ -22,7 +21,6 @@ const edit = ({
           setAttributes({ content });
         }}
         onSplit={(value) => {
-          console.log(value);
           if (!value) {
             return createBlock(detailName);
           }
