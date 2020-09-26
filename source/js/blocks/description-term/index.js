@@ -6,6 +6,8 @@ import { DescriptionTitleIcon as icon } from "../../icons";
 import edit from "./edit";
 import save from "./save";
 import deprecated from "./deprecated";
+import transforms from "./transforms";
+
 import { name, category, supports, attributes, parent } from "./block.json";
 
 registerBlockType(name, {
@@ -18,6 +20,7 @@ registerBlockType(name, {
   },
   keywords: [__("description term"), __("Description Term")],
   attributes,
+  transforms,
   parent,
   edit,
   save,
