@@ -1,0 +1,28 @@
+{
+  "name": "dl-block-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "wp-scripts start source/js/editor.js --output-path build/js",
+    "build": "wp-scripts build source/js/editor.js --output-path build/js",
+    "watch-css": "node-sass -w source/css/ -o build/css/",
+    "build-css": "node-sass source/css/ -o build/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CY8s/dl-block-plugin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CY8s/dl-block-plugin/issues"
+  },
+  "homepage": "https://github.com/CY8s/dl-block-plugin#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@wordpress/scripts": "^12.2.1",
+    "node-sass": "^4.14.1"
+  }
+}

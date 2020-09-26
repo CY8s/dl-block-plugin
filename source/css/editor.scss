@@ -1,0 +1,37 @@
+/* */
+
+.cy-custom-input-control {
+  appearance: none;
+  display: block;
+  //width: 100%;
+  border: none !important;
+  outline: none !important;
+
+  &:focus {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  &::placeholder {
+    color: inherit !important;
+    opacity: 0.6;
+  }
+
+  &:focus::placeholder {
+    opacity: 0;
+  }
+}
+
+.wp-block{
+  &[data-type="cydlwp/description-term"] {
+    margin: 10px auto 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  &[data-type="cydlwp/description-detail"] {
+    margin: 0 auto;
+  }
+}

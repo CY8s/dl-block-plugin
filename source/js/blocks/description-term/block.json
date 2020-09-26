@@ -1,0 +1,15 @@
+
+{
+	"name": "cydlwp/description-term",
+	"category": "common",
+  "attributes": {
+    "content": {
+      "type": "string"
+    }
+  },
+  "supports": {
+    "className": "false",
+    "align": "false"
+  },
+  "parent": ["cydlwp/description-list"]
+}
