@@ -20,6 +20,7 @@ registerBlockType(name, {
   },
   keywords: [__("description term"), __("Description Term")],
   attributes,
+  usesContext: ["cydlwp/dt-aria-level"],
   transforms,
   parent,
   edit,

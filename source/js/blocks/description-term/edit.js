@@ -11,7 +11,12 @@ const edit = ({
   mergeBlocks,
   onReplace,
   onRemove,
+  context,
 }) => {
+  setAttributes({
+    ariaLevel: context["cydlwp/dt-aria-level"],
+  });
+
   return (
     <>
       <RichText
@@ -30,6 +35,7 @@ const edit = ({
             content: value,
           });
         }}
+        aria-level={attributes.ariaLevel}
         onMerge={mergeBlocks}
         onReplace={onReplace}
         onRemove={onRemove}

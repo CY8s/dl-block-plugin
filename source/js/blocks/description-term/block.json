@@ -5,6 +5,9 @@
   "attributes": {
     "content": {
       "type": "string"
+    },
+    "ariaLevel": {
+      "type": "number"
     }
   },
   "supports": {

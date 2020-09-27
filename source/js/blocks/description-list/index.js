@@ -18,7 +18,14 @@ registerBlockType(`cydlwp/${name}`, {
     align: false,
   },
   keywords: [__("description list"), __("Description List")],
-  attributes: {},
+  attributes: {
+    ariaLevel: {
+      type: "number",
+    },
+  },
+  providesContext: {
+    "cydlwp/dt-aria-level": "ariaLevel",
+  },
   edit,
   save,
   deprecated,

@@ -15,8 +15,8 @@ export default {
         },
       }),
       transform(node) {
-        const attributes = getBlockAttributes(name, node.outerHTML);
-        attributes.content = node.outerHTML;
+        const attributes = getBlockAttributes(name);
+        attributes.content = node.innerHTML;
         return createBlock(name, attributes);
       },
     },
