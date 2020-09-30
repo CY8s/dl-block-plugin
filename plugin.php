@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: &lt;DL&gt; Block
- * Version:     1.0.0
+ * Version:     1.0.1
  * Author:      Casey Yates
  * Description: Adds block for description list (or definition list) &lt;DL&gt; content
  */
