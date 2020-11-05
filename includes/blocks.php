@@ -11,8 +11,6 @@ function cydlwp_register_dev_blocks() {
 		'lodash'
 	);
 
-	$dependencies = [];
-
 	// Register JavasScript File build/index.js
 	wp_register_script(
 		'cydlwp-editor-scripts',
